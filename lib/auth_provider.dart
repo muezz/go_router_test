@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
 
@@ -11,7 +10,6 @@ enum AuthState {
 
 typedef ChildProps = ({
   String? content,
-  bool? isUpdating,
 });
 
 class AuthProvider extends ChangeNotifier {
@@ -26,7 +24,6 @@ class AuthProvider extends ChangeNotifier {
 
   Future<void> initAuthProvider() async {
     setAuthState(AuthState.loading);
-    log('1');
     await Future.delayed(
       const Duration(seconds: 1),
       () {

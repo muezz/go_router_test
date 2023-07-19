@@ -61,7 +61,6 @@ class HomePage extends StatelessWidget {
                             extra: (
                               content:
                                   'When you pushed this child page on top of the home page, you provided it with a string prop called "content" as GoRouterState.extra',
-                              isUpdating: true,
                             ),
                           );
                         },
